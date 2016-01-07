@@ -44,4 +44,22 @@ $( document ).ready(function() {
             $photos.append( '<img src="' + imageUrl + '" />' );
         }
     });
+
+    $( '#form' ).on('submit', function( e ) {
+        e.preventDefault();
+
+        var tagName = $( '#search' ).val();
+        Instagram.tagsByName(tagName, function( response ) {
+            var $instagram = $( '#photos' );
+            $instagram.html('');
+
+            for ( var i = 0; i < response.data.length; i++ ) {
+                imageUrl = response.data[i].images.low_resolution.url;
+                $instagram.append( '<img src="' + imageUrl + '" />' );
+            }
+        });
+
+    });
+
+
 });
