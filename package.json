@@ -1,0 +1,25 @@
+{
+  "name": "photo-finder",
+  "version": "1.0.0",
+  "description": "photo app using instagram and jquery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthan-ahmed/photo-finder.git"
+  },
+  "author": "Sulthan Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sulthan-ahmed/photo-finder/issues"
+  },
+  "homepage": "https://github.com/sulthan-ahmed/photo-finder#readme",
+  "dependencies": {
+    "consolidate": "^0.13.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  }
+}

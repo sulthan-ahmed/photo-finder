@@ -4,7 +4,7 @@
 //What is different is this has functions as key value pairs
 window.Instagram = {
     //Store URL and access token
-    access_token: '2318918744.1fb234f.89b63cc3ffbb4c9eac998e394f26b461',
+    access_token: ''
     BASE_URL: 'https://api.instagram.com/v1',
 
     //call get popular pics function, the data that is retrieves, use this in the callbak
@@ -63,3 +63,5 @@ $( document ).ready(function() {
 
 
 });
+
+
